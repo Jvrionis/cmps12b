@@ -1,0 +1,67 @@
+# 				Readme PA-5
+
+# Name:         James Michael Vrionis
+# Date:         11/30/16
+# ID:           jvrionis
+# Class:        12M
+# Location:	    /afs/cats.ucsc.edu/users/k/jvrionis/jvrionis/pa5
+# File(s):      README Dictionary.c DictionaryTest.c DictionaryClient.c
+#			 	Makefile 
+#
+## Purpose:     In this project you will recreate the Dictionary ADT from pa3 
+#			   	and lab5, again in C but now based on ahash table instead
+#			   	of a linked list 
+#			   
+#
+## Compiling:	make
+#				#on ubuntu system
+#				./DictionaryClient
+#                
+## Output:       ./DictionaryClient 
+#				two bar 
+#				one foo 
+#				four galumph 
+#				five happy 
+#				three blah 
+#				six sad 
+#				seven blue 
+#				key="one" value="foo"
+#				key="two" value="bar"
+#				key="three" value="blah"
+#				key="four" value="galumph"
+#				key="five" value="happy"
+#				key="six" value="sad"
+#				key="seven" value="blue"
+#				two bar 
+#				four galumph 
+#				five happy 
+#				three blah 
+#				six sad 
+#				seven blue 
+#				key="one" not found "(null)"
+#				key="two" value="bar"
+#				key="three" value="blah"
+#				key="four" value="galumph"
+#				key="five" value="happy"
+#				key="six" value="sad"
+#				key="seven" value="blue"
+#				false
+#				4
+#				true
+#
+#
+## Summary:		In this implementation the Dictionary operations will run in 
+#			    constant time Θ ( 1 ) . The catch is that this is the average
+#			    case run time. The worst case run time of the Dictionary 
+#			    operations in a hash table implementation can be as bad as 
+#			    Θ (n) , the time for a linked list.
+#
+## Valgrind:    output of: valgrind --leak-check=full ./DictionaryClient
+#               ==5775== HEAP SUMMARY:
+#               ==5775==     in use at exit: 0 bytes in 0 blocks
+#               ==5775==   total heap usage: 9 allocs, 9 frees, 950 bytes allocated
+#               ==5775== 
+#               ==5775== All heap blocks were freed -- no leaks are possible
+			   
+
+

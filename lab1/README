@@ -1,0 +1,11 @@
+
+ Name:		James Vrionis
+
+ Class:	    	CMPS-12B/M
+ Files: 	HelloUser1.java HelloUser2.java HelloUser1.class HelloUser.class 
+		Makefile1 Makefile2 Makefile3 README 
+ About: 	This was a lab about creating a 'make' file(s) running java code with the created makefiles.
+            	After you run make -f Makefile1, make -f Makefile2, or make -f Makefile3 
+		each make -f <command> must be followed by a 'clean'. 
+		EX: make -f Makefile1. make -f Makefile1 clean. 
+

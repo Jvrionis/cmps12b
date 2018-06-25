@@ -1,0 +1,13 @@
+# A simple Makefile
+#
+HelloUser: HelloUser.class
+	echo Main-class: HelloUser > Manifest		# Makes a file containing 'Main-class: HelloUser' 
+	jar cvfm HelloUser Manifest HelloUser.class 	# create group of java files together
+	rm Manifest					# remove the 'Manifest file'
+	chmod +x HelloUser				# Change HelloUser file rights to executable
+
+HelloUser.class: HelloUser.java
+	javac -Xlint HelloUser.java			# compile java code "HelloUser.java"
+	
+clean:
+	rm -f HelloUser HelloUser.class			# force remove HelloUser and HelloUser.class

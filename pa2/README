@@ -1,0 +1,49 @@
+README for Programming Assignment 2:
+
+Name:           James Michael Vrionis
+Date:           10/14/16
+ID:             1562232
+Class:          12B
+Location:	    /afs/cats.ucsc.edu/users/k/jvrionis/jvrionis/pa2
+File(s):        README  MakeFile  Search.java  Search.class  file1
+
+Purpose:        Implement the Binary Search and Merge Sort algorithms 
+                discussed in class. Adapt these methods to operate on String 
+                arrays rather than int arrays by changing the comparison of 
+                the array elements given s1 and s2. This program will take
+                command line arguments giving a file to be searched and target
+		        word(s) to search for.
+
+Compiling:      use 'make' to compile Search.java. use 'make clean' to
+                remove .class files
+
+Running:        java Search <file in> target1 [target2 target3 ...]
+                EX (after make): java Search file1 however initial value key
+
+
+
+ 
+Summary:  	This program sorts file1 included in my ~/cs12b/pa2/ 
+		    This program will print the <word searched> if it is there and 
+            will output
+		    the line number it was originally found on. If a word is not 
+            there it will 
+		    simply print <searched word> not found.
+output:                    
+
+	# java Search file1 entire beginning possibly specified key value initial before dictionary however
+	entire found on line 1
+	beginning found on line 2
+	possibly found on line 3
+	specified found on line 4
+	key found on line 5
+	value found on line 6
+	initial found on line 7
+	before found on line 8
+	dictionary found on line 9
+	however found on line 10
+
+
+
+
+

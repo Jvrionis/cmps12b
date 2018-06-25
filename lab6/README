@@ -1,0 +1,58 @@
+# 				Readme Lab6
+
+# Name:         James Michael Vrionis
+# Date:         11/18/16
+# ID:           jvrionis
+# Class:        12M
+# Location:	    /afs/cats.ucsc.edu/users/k/jvrionis/jvrionis/lab6
+# File(s):      README Makefile List.java ListTest.java ListInterface.java
+# 				ListIndexOutOfBoundsException.java ListClient.java
+
+## Purpose:     The goal of this assignment is to gain experience with an 				
+# 				advanced feature in Java called Generics (similar to the
+# 				notion of Templates in C++. Java Generics allow you to
+# 				abstract over types: For example if we consider IntegerList 
+#				ADT DoubleList, or BooleanList or any other kind of List
+#				ADT.Conveniently, to build a single List-of-anything ADT that 
+# 				could be reused with any data type.
+#
+## Compiling:	#to see my ListTest.java: 
+#				javac ListTest.javac
+#				#on ubuntu
+#				java ListTest
+				
+#				# Normal Compilation:
+#				make 
+# 				# on ubuntu 
+#				java ListClient
+                
+## output:      A: one two three 
+#				B: ten twenty thirty 
+#				C: one two three  ten twenty thirty  
+#				A.equals(A) is true
+#				A.equals(B) is false
+#				A.equals(C) is false
+#				A.size() is 3
+#				B.size() is 3
+#				C.size() is 2
+#				A.size() is 2
+#				B.size() is 2
+#				B.get(1) is ten
+#				C: two three  ten thirty  
+#
+#				Caught Exception: 
+#				ListIndexOutOfBoundsException: get(): invalid index: 200
+#				Continuing without interuption
+#
+#				A.get(2) is three
+#				C.get(1) is two three 
+
+## Summary:    This program should produce identical output to the "model-out"
+#			   file provided online. ListTest.java must test all ADT operations also
+#			   using @SuppressWarnings( "<warning>") which overrides the errors shown
+#			   using -Xlint. The list implements a generic List interface defined in 
+#			   the ListInterface.java (found online), testing this interface using 
+#			   ListTest.java. 
+			   
+
+

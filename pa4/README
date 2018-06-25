@@ -1,0 +1,124 @@
+# 				README PA-4
+#
+# Name:         James Michael Vrionis
+# Date:         11/18/16
+# ID:           jvrionis
+# Class:        12B
+# Location:	    /afs/cats.ucsc.edu/users/k/jvrionis/jvrionis/pa4
+# File(s):      README Makefile Simulation.java QueueInterface.java QueueEmptyException.java 
+#				Queue.java QueueTest.java Job.java
+#
+## Purpose:     Inplementation of a Queue ADT in Java based on a linked list data structure. Use your
+#			 	Queue ADT to "simulate" a set of "jobs" that may have to wait in a queue. The goal of
+#			 	the simulation will be as follows: given a batch of m jobs, each with specific arrival
+#			 	times and durrations, determine (1) the total wait time ( total time spent by all m jobs
+#			 	waiting in queues) (2) the maximum wait time ( longest wait any of the m jobs endured)
+#			 	and (3) Average Wait time over all m jobs. Determining these quantities for a processor,
+#			 	where n ranges from 1 to m-1. The n processors in the simulation will be represented by
+#			 	an array of a processor queues.  Jobs at the front of the queue will be considered
+#			 	underway, while jobs behind it will be waiting. When the job arrives its assigned a
+#			 	processor queue of min length. if there is more than one min length processor queue,
+#			 	then put the jobat the one with the smallest index. Utilize an additional queue for
+#			 	storage of those jobs that haven't yet arrived., and for those that have been 		
+#			 	completed.  
+#
+#
+## Compiling: make
+#			  #on ubuntu 
+#			  #java Simulation <input_file> 
+#			  java Simulation ex1		
+#                
+## output:    With an appropriate input file, such as ex1 oput is two files: ex1.rpt and ex1.trc
+#			  ex1.rpt =>
+# 
+#			  Report file: ex1.rpt
+#			  3 Jobs:
+#			  (2, 2, *) (3, 4, *) (5, 6, *) 
+#
+#			  ***********************************************************
+#			  1 processor: totalWait=4, maxWait=3, averageWait=1.33
+#			  2 processors: totalWait=0, maxWait=0, averageWait=0.
+#
+#			  ex1.trc =>
+#
+#			  Trace file: ex1.trc
+#				 3 Jobs:
+#				(2, 2, *) (3, 4, *) (5, 6, *) 
+#
+#				*****************************
+#				1 processor:
+#				*****************************
+#				time=0
+#				0: (2, 2, *) (3, 4, *) (5, 6, *) 
+#				1: 
+#
+#				time=2
+#				0: (3, 4, *) (5, 6, *) 
+#				1: (2, 2, 4) 
+#
+#				time=3
+#				0: (5, 6, *) 
+#				1: (2, 2, 4) (3, 4, *) 
+#
+#				time=4
+#				0: (5, 6, *) 
+#				1: (3, 4, 8) 
+#
+#				time=5
+#				0: 
+#				1: (3, 4, 8) (5, 6, *) 
+#
+#				time=8
+#				0: 
+#				1: (5, 6, 14) 
+#
+#				time=14
+#				0: 
+#				1: 
+#
+#				*****************************
+#				2 processors:
+#				*****************************
+#				time=0
+#				0: (2, 2, *) (3, 4, *) (5, 6, *) 
+#				1: 
+#				2: 
+#
+#				time=2
+#				0: (3, 4, *) (5, 6, *) 
+#				1: (2, 2, 4) 
+#				2: 
+#
+#				time=3
+#				0: (5, 6, *) 
+#				1: (2, 2, 4) 
+#				2: (3, 4, 7) 
+#
+#				time=4
+#				0: (5, 6, *) 
+#				1: 
+#				2: (3, 4, 7) 
+#
+#				time=5
+#				0: 
+#				1: (5, 6, 11) 
+#				2: (3, 4, 7) 
+#
+#				time=7
+#				0: 
+#				1: (5, 6, 11) 
+#				2: 
+#
+#				time=11
+#				0: 
+#				1: 
+#				2: 
+#
+## Summary:    program will take one command line argument giving the name of an input file, 
+#			   and will write to two output files whose names are the name of the input file 
+#			   followed by the suffixes .rpt and .trc result will be the creation of two files 
+#			   in your current working directory called input_file.rpt and input_file.trc 
+#			   shortest. 
+			   
+
+

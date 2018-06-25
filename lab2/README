@@ -1,0 +1,34 @@
+# README FILE
+Author:         James Michael Vrionis
+ID:             1562232
+
+Lab Partener:   Shaer Munir
+ID:             1347703
+
+Class:          CMPS12M
+Directory:      /afs/cats.ucsc.edu/users/k/jvrionis/jvrionis/lab2
+
+Files:          in lab-examples:
+                CommandLineArguments.java  FileCopy.java
+                FileTokens.java  
+                in lab2:
+                FileReverse.java in out Makefile README
+
+Summary:        In CommandLineArguments ~!@#$%^&*()_+ any of these 
+                as arguments will break the program. I have not 
+                tested the other programs for this problem but 
+                Beware.
+                To run the eample code is there is such a need
+                the normal javac <program> then 
+                java <program> <file in> <file out> because there 
+                is only one make file and that is for the lab 2.
+
+commit-c3cb78ae47d2fc84b99db784a6357fe35fe05f12
+Author: James Michael Vrionis <jvrionis@unix3.lt.ucsc.edu>
+Date:   Fri Oct 7 21:18:21 2016 -0700
+
+    DONE w/ lab2
+
+
+
+ 

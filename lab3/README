@@ -1,0 +1,27 @@
+README for Lab 3:
+
+Name:           James Michael Vrionis
+Date:           10/19/16
+ID:             jvrionis
+Class:          12M
+Location:       /afs/cats.ucsc.edu/users/k/jvrionis/jvrionis/lab3
+File(s):        README MakeFile FileReverse.c FileReverse.o FileReverse
+
+Purpose:        To write a program in C that takes an input file with the alphabet
+                and writes the file in reverse to a file called out. 
+
+Compiling:      Do the following (for Ubuntu users):
+                make
+                .\FileReverse <input file> <output file> 
+
+Summary:       This is the C version of the java program FileReverse that did for lab2.
+               After making an executible jar file, it will take two command line 
+               arguments naming the input and output files in and out, reversing the 
+               contents of 'in' into a new file called 'out'.
+
+
+
+
+
+
+

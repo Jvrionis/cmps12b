@@ -1,0 +1,48 @@
+README for charType.c
+
+
+Name:           James Michael Vrionis
+Date:           10/28/16
+ID:             jvrionis
+Class:          12M
+Location:	    /afs/cats.ucsc.edu/users/k/jvrionis/jvrionis/lab4
+File(s):        README Makefile charType.c 
+
+Purpose:        To read input from a string.
+
+Compiling:	Do the following (for Ubuntu users):
+                make
+                .\FileReverse <input file> <output file>
+
+output:         % cat out
+
+                line 1 contains:
+                12 alphabetic characters: abchuryhqxbv
+                3 numeric characters: 638
+                8 punctuation characters: -)(*&!~`
+                5 whitespace characters:     
+
+                line 2 contains:
+                6 alphabetic characters: JKLmnb
+                3 numeric characters: 345
+                13 punctuation characters: *()#$$%~!@?><
+                2 whitespace characters:  
+                
+                line 3 contains:
+                10 alphabetic characters: afsteyYDNC
+                2 numeric characters: 64
+                1 punctuation characters: &
+                6 whitespace characters:      
+                
+                line 4 contains:
+                9 alphabetic characters: hfdjstreL
+                1 numeric characters: 9
+                8 punctuation characters: *&^^%$":
+                1 whitespace characters:
+
+Summary:       This is the C version of the java program FileReverse that did in java
+               After making an executible jar file, it will take two commandline
+               arguments naming the input and output files in and out, reversing
+               contents of 'in' into a new file called 'out'.
+
+
